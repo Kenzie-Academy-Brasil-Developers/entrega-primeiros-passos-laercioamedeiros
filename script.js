@@ -125,6 +125,6 @@ if (total % 2 == 0) {
     meuTotal = total/2
     console.log(`${meuTotal}`)
     alert(` Você dividirá o valor do vinho R$ ${totalVinho}  com seu amigo, que dará ${totalVinho/2}`)
-    alert(` Você pagará: R$ ${meuTotal += totalVinho/2}`)
+    alert(` Você pagará: R$ ${meuTotal}`)
     
 }
