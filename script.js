@@ -1,18 +1,23 @@
 const precoRefrigerante = 11.99
 let quantidadeRefrigerante = 0
+let totalRefrigerante = 0
 const precoMacarrao = 6.99
 let quantidadeMacarrao = 0
+let totalMacarrao = 0
 const precoErvilha = 6.99
 let quantidadeoErvilha = 0
+let totalErvilha = 0
 const precoArroz = 22.99
 let quantidadeArroz = 0
+let totalArroz = 0
 const precoFeijao = 11.89
 let quantidadeFeijao = 0
+let TotalFeijao = 0
 const precoVinho = 70.00
 let quantidadeVinho = 0
-let totalVinho
+let totalVinho = 0
 let total = 0
-let meuTotal=
+let meuTotal = 0
 
 alert('Bem vindo ao Kenzie SuperMarket, vamos iniciar')
 
@@ -28,7 +33,7 @@ if (quantidadeRefrigerante <= 0) {
 
     quantidadeRefrigerante = parseInt(prompt("Quantas Unidades ?"))
 }
-
+totalRefrigerante = precoRefrigerante * quantidadeRefrigerante
 total = precoRefrigerante * quantidadeRefrigerante
 
 //---------------------------------------------------------------
@@ -44,6 +49,7 @@ if (quantidadeMacarrao <= 0) {
     quantidadeMacarrao = parseInt(prompt("Quantas Unidades ?"))
 }
 
+totalMacarrao = precoMacarrao * quantidadeMacarrao
 total += precoMacarrao * quantidadeMacarrao
 
 //---------------------------------------------------------------
@@ -58,7 +64,7 @@ if (quantidadeErvilha <= 0) {
 
     quantidadeErvilha = parseInt(prompt("Quantas Unidades ?"))
 }
-
+totalErvilha = precoErvilha * quantidadeErvilha
 total += precoErvilha * quantidadeErvilha
 
 //---------------------------------------------------------------
@@ -73,7 +79,7 @@ if (quantidadeArroz <= 0) {
 
     quantidadeArroz = parseInt(prompt("Quantas Unidades ?"))
 }
-
+totalArroz = precoArroz * quantidadeArroz
 total += precoArroz * quantidadeArroz
 
 //---------------------------------------------------------------
@@ -88,7 +94,7 @@ if (quantidadeFeijao <= 0) {
 
     quantidadeFeijao = parseInt(prompt("Quantas Unidades ?"))
 }
-
+TotalFeijao = precoFeijao * quantidadeFeijao
 total += precoFeijao * quantidadeFeijao
 
 //---------------------------------------------------------------
@@ -118,7 +124,7 @@ if (total % 2 == 0) {
     alert(` O total foi: R$ ${total}`)
     meuTotal = total/2
     console.log(`${meuTotal}`)
-    alert(` Você dividirá o valor R$ ${totalVinho}  com seu amigo, que dará ${totalVinho/2}`)
+    alert(` Você dividirá o valor do vinho R$ ${totalVinho}  com seu amigo, que dará ${totalVinho/2}`)
     alert(` Você pagará: R$ ${meuTotal += totalVinho/2}`)
     
 }
